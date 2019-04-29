@@ -3,6 +3,7 @@
   --blackText: #333;
   --whiteText: rgba(255,255,255, .8);
   --darkShadow: rgba(0,0,0,.5);
+  --blueText: #1976D2;
 }
 
 *,
@@ -282,7 +283,7 @@ aside .category-list li{
 }
 
 aside .category-list li a:hover {
-  color: #1976D2;
+  color: var(--blueText);
   padding-left: 10px;
   text-decoration: none;
 }
@@ -312,6 +313,32 @@ main {
 
 main .page-title-head {
   margin: 0 0 2rem 0;
+}
+
+main .main-news {
+  padding: 5px 10px 15px 10px;
+  margin: 0 2rem 2rem 0;
+}
+
+main .main-news video {
+  max-width: 100%;
+}
+
+main .main-news a {
+  color: var(--blackText);
+  transition: .2s;
+}
+
+main .main-news a:hover {
+  color: var(--blueText);
+}
+
+main .cards {
+  margin-top: 4rem;
+}
+
+main .cards-title {
+  text-decoration: underline;
 }
 
 main .card {
@@ -442,6 +469,11 @@ main .paginate ul li.previous {
   margin-right: 7px;
 }
 
+main.about-page section {
+  margin: 0 1rem 2rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2rem;
+}
 
 
 
@@ -471,75 +503,10 @@ footer .content .link-list .head {
   margin: 5px 0;
 }
 
-footer .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding: 15px;
+footer .content. .link-list li a:hover {
+  text-decoration: underline;
 }
 
-footer .social a {
-  width: 70px;
-  transition: .25s;
-}
-
-footer .social img {
-  max-width: 100%;
-  margin: 0 1rem;
-  transition: .25s;
-  position: relative;
-}
-
-footer .social a:hover {
-  transform: scale(1.2);
-  margin-top: -1rem;
-}
-
-
-/* ADMIN Pages */
-.admin-menu {
-
-}
-
-.admin-menu .menu-list {
-  justify-content: center;
-}
-
-.center-of-table {
-  padding: 0 5rem;
-}
-
-.ban-of-table {
-  padding-left: 5rem;
-}
-
-.image img {
-  max-width: 150px;
-}
-
-.list {
-  display: flex;
-  overflow: auto;
-}
-
-.list ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0 1rem;
-}
-
-.list ul li {
-  padding: 10px;
-  max-width: 300px;
-  overflow: hidden;
-  border-bottom: 1px solid var(--blackText);
-  margin: 5px 0;
-  white-space: nowrap;
-}
 
 /* MEDIA QUERIES */
 @media (min-width: 320px) {
