@@ -320,7 +320,7 @@ main .main-news {
   margin: 0 2rem 2rem 0;
 }
 
-main .main-news video {
+main .main-news video, main .main-news iframe {
   max-width: 100%;
 }
 
